@@ -10,7 +10,6 @@ function Get-InclusionList {
 	$g_Inclusion = "v","m","n","r","ts","dz","th","sh","tsh"
 	$r_Inclusion = "v","p","t","d","m","n","ts","dz","th","sh","tch"
 	$affricate_Inclusion = "v","p","m","n","c","k","q","g","r"
-	$nucleus = "a","e","i","o","v","m","n","s","z","ts","dz","th","sh","tch"
 	
 	if($CheckString -match "v$"){
 		return $v_Inclusion
@@ -48,6 +47,8 @@ function Get-Syllable {
 
 	$wordInitial = "ch","v","m","n","s","z","ch","p","t","d","c","k","q","g","ch","r","ts","dz","th","sh","tch","ch"
 	$wordFinal = "ch","l","x","ch","l","x","ch","l","x","ch","l","x"
+	$nucleus = "a","e","i","o","v","m","n","s","z","ts","dz","th","sh","tch"
+	#$nucleus = "a","e","i","o","a","e","i","o","v","m","n","s","z","ts","dz","th","sh","tch"
 
 	$Syllable=''
 	$CCount=0
